@@ -4,345 +4,180 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=itial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayar Restaurant</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Mayar Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-info navbar-dark py-3 fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand text-dark">Mayar Restaurant</a>
-            <button class="nav-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggle-icon"></span>
-            </button>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="container-fluid fixed-top">
+            <b>
+                <h3>MayarRestaurant</h3>
+            </b>
+            <ul class="menu ms-auto">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Dishes">Menu</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Bookings">Order Online</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                            <ul class="navbar-navs">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-dark" href="#"
-                                        id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Foods
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark"
-                                        aria-labelledby="navbarDarkDropdownMenuLink" style="font-weight: bolder;">
-                                        <li><a class="dropdown-item" href="#Fried Vegetables">Fried Vegetables</a></li>
-                                        <li><a class="dropdown-item" href="#Mandi">Mandi </a></li>
-                                        <li><a class="dropdown-item" href="#Susi">Susi</a></li>
-                                        <li><a class="dropdown-item" href="#Saltah">Saltah</a></li>
-                                        <li><a class="dropdown-item" href="#Ba_khamri">Ba_khamri </a></li>
-                                        <li><a class="dropdown-item" href="#Bent-alsahn">Bent-alsahnian</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+    <!--Main Display-->
+    <section class="display container-fluid text-center pt-5">
+        <div style="padding: 5%; font-size: 100px;"><b><span class="text-warning">Mayar</span> Restaurant</b></div>
+        <div>
+            <b>
+                <p style="padding-bottom: 5%; font-size: 50px; text-shadow: 30px;"><i>Your Satisfaction is Our
+                        Priority!</i><br>
+                    <span style="color: white; font-family: cursive;">Welcome and get ready to explore more</span>
+                </p>
+            </b>
+        </div>
+    </section>
 
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link text-dark">What You'll experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#support" class="nav-link text-dark">Contact Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#newsletter" class="nav-link text-dark">Newsletter</a>
+    <!--Order Online-->
+    <section class="container-fluid p-3" style="background-color: yellow;" id="Bookings">
+        <h4 class="text-center"><b>Order Food Online</b></h4>
+        <div class="row align-items-center">
+            <div class="col-md">
+                <img src="img/orderOnline.jpg" alt="Order Online" style="width: 100%; height: 350px;"></img>
+            </div>
+            <div class="col-md p-5 align-items-center justify-content-between">
+                <p>Our restaurant is open <span class="badge bg-info">24 hours a day, 7 days a week,</span> so you can
+                    check in or contact us at any time. Our reception desk is staffed 24/7, and our team is always ready
+                    to assist you with anything you need.
+                </p>
+                <p>We are excited to offer our delicious menu items for both dine-in and takeout. Ordering online is a
+                    convenient and easy way to enjoy our food from the comfort of your own home or office. Not only does
+                    it save you time, but it also allows you to explore our full menu and customize your order without
+                    any rush or pressure</p>
+                <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right">Read More</i></a>
+            </div>
+        </div>
+    </section>
+
+    <hr style="color: #FF00CC;">
+
+    <!--Menu-->
+    <section class="container-fluid dishes text-center p-3" id="Dishes">
+        <h3>Exotic Cuisines</h3>
+        <div class="row align-items-center g-4">
+            <div class="col-sm-4">
+                <img class="rounded float-start" src="img/Fried Vegetables.jpg" alt="Vegetables"></img>Fried Vegetables
+                - $9
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded float-start" src="img/Mandi.jpg" alt="Mandi"></img>Mandi - $18
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded float-start" src="img/Bent-alsahn.jpg" alt="Bent-alsahn"></img>Bent-alsahn - $12
+            </div>
+        </div>
+        <hr>
+        <h3>Local Cuisines</h3>
+        <div class="row align-items-center g-4">
+            <div class="col-sm-4">
+                <img class="rounded float-start" src="img/Ba_khamri.jpg" alt="Ba_khamri"></img>Ba_khamri -$6
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded float-start" src="img/Saltah.jpg" alt="Saltah"></img>Saltah - $8
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded float-start" src="img/Tramba.jpg" alt="Tramba"></img>Tramba - $5
+            </div>
+        </div>
+    </section>
+
+    <hr style="color: #FF00CC;">
+
+    <!--Review-->
+    <section class="container-fluid p-3 justify-content-between" id="Reviews" style="background-color: yellow;">
+        <h4 class="text-center"><b>Review</b></h4>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5 text-align-left">
+                <p>"I recently had the pleasure of dining at this restaurant and it was an incredible experience! From
+                    the warm and welcoming atmosphere to the exceptional service and delectable cuisine, everything
+                    exceeded my expectations.
+                </p>
+                <p>
+                    The menu offered a great variety of options and I decided to try the Chef's Special, which was a
+                    flavor explosion in my mouth! The presentation of the dish was also impressive.
+                </p>
+                <p>The staff was attentive and knowledgeable, providing excellent recommendations and making sure
+                    everything was to my liking. Overall, I had a fantastic time and can't wait to come back and try
+                    more dishes. Highly recommended!"
+                </p>
+                <h4><b>Mr. Hansen - Customer</b></h4>
+            </div>
+            <div class="col-md">
+                <img src="img/review.jpg" style="width: 100%; height: 350px;" alt="Explore our Reviews"></img>
+            </div>
+        </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="container-fluid text-center" id="Gallery">
+        <h4 class="mt-4"><b>Gallery</b></h4>
+        <div class="row gallery align-items-center g-4">
+            <div class="col-md">
+                <img class="rounded float-start" src="img/haneedh-yemeni.webp" alt="Vegetables"></img>Diverse Dishes
+            </div>
+            <div class="col-md">
+                <img class="rounded float-start" src="img/Yemenite.jpg" alt="Mandi"></img>Perfect Taste
+            </div>
+            <div class="col-md">
+                <img class="rounded float-start" src="img/food1.jpg" alt="Bent-alsahn"></img>Good Hygiene
+            </div>
+            <div class="col-md">
+                <img class="rounded float-start" src="img/food2.jpg" alt="Mandi"></img>Well Cooked
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light">
+        <div class="pt-5 row text-center mt-5">
+            <div class="col">
+                <h3 class="text-warning">About Us</h3><br>
+                <p style="text-align: left; padding-left: 5%;">Mayar Restaurant offers a variety of traditional dishes;
+                    a unique culinary experience that showcases
+                    the rich and vibrant flavors of Yemeni cuisine.</p>
+            </div>
+            <div class="col">
+                <h3 class="text-warning">Quick Links</h3><br>
+                <ul>
+                    <li><a class="text-light" href="#">Feedback</a></li>
+                    <li><a class="text-light" href="#">Be Our Chef</a></li>
+                    <li><a class="text-light" href="#">Apply Discount</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3 class="text-warning">Contact Us</h3><br>
+                <ul style="text-align: left; padding-right: 5%;">
+                    <li><i class="bi bi-geo-alt-fill"></i> 117 Partson Trail, New Jersey 10462, United States</li>
+                    <li><i class="bi bi-telephone-fill"></i> (347) 647-8976</li>
+                    <li><i class="bi bi-envelope-fill"></i><a href="mailto:restraint@gmail.com"> restraint@gmail.com</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <!--Showcase-->
-    <section id="showcase" class="bg-dark text-light pt-5 text-center text-sm-start"
-        style="background-image: url(img/Arcano-copie.jpg);">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="transbox text-center">
-                    <h1>
-                        <p>Welcome to Mayar Restaurant!</p>
-                    </h1>
-                    <p class="lead my-4">
-                        <b>Indulge in the rich and diverse flavors of Yemeni
-                            cuisine, where every dish tells a story of the country's culture and history. From aromatic
-                            lamb
-                            and chicken stews to the iconic bread called "malawah," our menu features a variety of
-                            authentic
-                            dishes that will take your taste buds on a culinary journey through Yemen. Come experience
-                            the
-                            warmth of our hospitality and the boldness of our flavors at our Yemeni foods restaurant.
-                        </b>
-                    </p>
-                </div>
-            </div>
-            <marquee class="mt-5" width="100%" direction="right" height="100px" style="font-size: 40px;" vspace="20">
-                <b>Opening Hours: <span class="text-warning">Monday - Sunday</span> 24 hours a day</b>
-            </marquee>
-        </div>
-    </section>
-
-    <!--Support-->
-    <section id="support" class="p-5">
-        <div class="container">
-            <h2 class="text-center text-dark">Contact Support</h2>
-            <p class="lead text-center text-dark">
-                Select the type of communication arrangement that you would like. You can choose to have a virtual,
-                hybrid or in person consultation.
-            </p>
-            <div class="row text-center g-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                Virtual
-                            </h3>
-                            <p class="card-text">
-                                Arrange a virtual interaction with one of our support agent..
-                            </p>
-                            <a href="#" class="btn btn-info">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-info text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-person-square"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                Hybrid
-                            </h3>
-                            <p class="card-text">
-                                Arrange a hybrid meeting with one of our support agent.
-                            </p>
-                            <a href="#" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                In Person
-                            </h3>
-                            <p class="card-text">
-                                Arrange a face-to-face meeting with one of our support.
-                            </p>
-                            <a href="#" class="btn btn-info">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <!--Sample Sections-->
-    <section id="experience" class="p-5 pt-0">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="img/image2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-md p-5">
-                    <h2>Experience Exciting Dishes!</h2>
-                    <p class="lead">
-                        Get ready for a mouth-watering adventure and experience exciting dishes like never before! Our
-                        culinary experts have crafted a menu that takes your taste buds on a journey of bold flavors,
-                        unique textures, and unforgettable combinations.
-                    </p>
-                    <p>From exotic cuisines to classic favorites with a twist, we've got something for everyone. Don't
-                        miss out on the culinary adventure of a lifetime!</p>
-                    <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right">Read More</i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Dish-->
-    <section id="learn" class="p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h2>Taste Freshness!</h2>
-                    <p class="lead">
-                        Are you craving something fresh and delicious? Look no further! Our dishes are crafted with the
-                        freshest ingredients, straight from the farm to your table. Experience the vibrant flavors and
-                        textures of our carefully prepared dishes and taste the difference of true freshness.
-                    </p>
-                    <p>From crisp salads to succulent entrees, we've got something to please every palate. Come and
-                        taste the goodness of freshness today and discover a new world of culinary delight!</p>
-                    <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right">Read More</i></a>
-                </div>
-                <div class="col-md">
-                    <img src="img/image3.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Foods-->
-    <section class="p-5">
-        <div class="container-fluid p-3 text-center">
-            <h2 class="text-center text-dark">Available Delicacies</h2>
-            <p class="lead text-center text-dark mb-2">
-                With a diverse selection of dishes made from the finest ingredients, there's something for everyone to
-                enjoy.
-            </p>
-            <div class="row align-items-center g-4">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="img/Fried Vegetables.jpg" class="card-img-top" id="Fried Vegetables"
-                            alt="Fried Vegetables">
-                        <div class="card-body">
-                            <p class="card-text">Fried Vegetables - $9</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="img/Susi.jpg" id="Susi" class="card-img-top" alt="Susi" style="height: 14rem;">
-                        <div class="card-body">
-                            <p class="card-text">Susi - $8</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="img/Saltah.jpg" class="card-img-top" id="Saltah" alt="Saltah" style="height: 14rem;">
-                        <div class="card-body">
-                            <p class="card-text">Saltah – $8</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid text-center">
-            <div class="row align-items-center justify-content-between g-4">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="img/Ba_khamri.jpg" id="Ba_khamri" class="card-img-top" alt="Ba_khamri"
-                            style="height: 14rem;">
-                        <div class="card-body">
-                            <p class="card-text">Ba_khamri - $6</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="img/Bent-alsahn.jpg" id="Bent-alsahn" class="card-img-top" alt="Bent-alsahn"
-                            style="height: 14rem;">
-                        <div class="card-body">
-                            <p class="card-text">Bent-alsahn - $12</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="img/Mandi.jpg" class="card-img-top" id="Mandi" alt="Mandi" style="height: 14rem;">
-                        <div class="card-body">
-                            <p class="card-text">Mandi – $18</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Newsletter-->
-    <section class="bg-primary text-dark p-2" id="newsletter"
-        style="background-image: url(img/sabayah.jpg); opacity: 0.8;">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">
-                    <marquee width="100%" direction="down" height="50px">
-                        Sign Up For Our Newsletter
-                    </marquee>
-                </h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Enter Email Address">
-                    <button class="btn btn-dark btn-lg" type="button">Button</button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--Footer-->
-    <footer class="p-5 bg-dark text-white">
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-between mb-3">
-                <div class="col-sm-4">
-                    <h3 class="text-warning">About</h3>
-                    <p>Welcome to our Yemeni restaurant, where we offer a unique culinary experience that showcases the
-                        rich and vibrant flavors of Yemeni cuisine. Our menu features a variety of traditional dishes
-                        made with fresh ingredients. Come and savor the warmth and hospitality
-                        of Yemeni culture through our delicious food.</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="text-warning">Contact Info</h3>
-                    <ul style="list-style: none;">
-                        <li><i class="bi bi-geo-alt-fill"></i> 117 Partson Trail, New Jersey 10462, United States</li>
-                        <li><i class="bi bi-telephone-fill"></i> (347) 647-8976</li>
-                        <li><i class="bi bi-envelope-fill"></i> <a
-                                href="mailto:restraint@gmail.com">restraint@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="text-warning">Quick Links</h3>
-                    <ul style="list-style: none;">
-                        <li><a class="text-light" href="#">Home</a></li>
-                        <li><a class="text-light" href="#">Menu</a></li>
-                        <li><a class="text-light" href="#">Review</a></li>
-                        <li><a class="text-light" href="#">Gallery</a></li>
-                        <li><a class="text-light" href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
         <hr>
-        <div class="container fluid">
-            <div class="container text-center position-relative p-3">
-                <p class="lead text-warning">Copyright &copy; 2023 Restaurant Mayar. All Rights Reserved</p>
-                <a href="#" class="position-absolute bottom-0 end-0">
-                    <i class="bi bi-arrow-up-circle h1"></i>
-                </a>
-            </div>
-        </div>
-        <div class="row text-center ">
-            <div class="col social-buttons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-google-plus"></a>
-                <a href="#" class="fa fa-twitter"></a>
+        <div class="row social text-center">
+            <div class="col socialinks">
+                <a href="#"><img src="img/facebook.jpg" alt="facebook"></a>
+                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="img/youtube.png" alt="youtube"></a>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
